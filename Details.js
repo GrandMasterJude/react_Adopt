@@ -66,10 +66,13 @@ class Details extends React.Component {
           <p>{description}</p>
           {showModal ? (
             <Modal>
-              <h1>Would you like to adopt {name}?</h1>
+              <h1>
+                Would you like to adopt {name}? (
+                <i>These buttons don't actually work</i>)
+              </h1>
               <div className="buttons">
-                <button onClick={this.toggleModal}>Yes</button>
-                <button onClick={this.toggleModal}>No</button>
+                <button onClick={this.toggleModal}>Yes!</button>
+                <button onClick={this.toggleModal}>Of Course</button>
               </div>
             </Modal>
           ) : null}
